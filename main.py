@@ -1,3 +1,6 @@
+git branch -m master main
+git push -u origin main
+
 # radia.fogo.main.py
 # __authors__ Fernanda, Finn, Vanessa, Anderson 
 """Página de Entrada do jogo Ilha Proibida Equipe Fogo.
