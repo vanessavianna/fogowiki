@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagina Ilha &mdash; documentação Ilha Proibida Fogo 26.12.2023</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=c803719d"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=000972dd"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Buscar" href="search.html" />
+    <link rel="next" title="Pagina Jogador" href="jogador.html" />
+    <link rel="prev" title="Bem vindo(a) ao Fogo wiki!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Ilha Proibida Fogo
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Pagina Ilha</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#changelog">Changelog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ilha.CartaAlagamento"><code class="docutils literal notranslate"><span class="pre">CartaAlagamento</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ilha.CartaTesouro"><code class="docutils literal notranslate"><span class="pre">CartaTesouro</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ilha.Carta_Troca_Terrenos"><code class="docutils literal notranslate"><span class="pre">Carta_Troca_Terrenos</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ilha.Carta_troca_habilidades"><code class="docutils literal notranslate"><span class="pre">Carta_troca_habilidades</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ilha.IlhaProibida"><code class="docutils literal notranslate"><span class="pre">IlhaProibida</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ilha.IlhaProibida.imprimir_tabuleiro_ilha"><code class="docutils literal notranslate"><span class="pre">IlhaProibida.imprimir_tabuleiro_ilha()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ilha.IlhaProibida.monta_tabuleiro_oceano"><code class="docutils literal notranslate"><span class="pre">IlhaProibida.monta_tabuleiro_oceano()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ilha.IlhaProibida.trocar_terrenos"><code class="docutils literal notranslate"><span class="pre">IlhaProibida.trocar_terrenos()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ilha.Terreno"><code class="docutils literal notranslate"><span class="pre">Terreno</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ilha.Terreno.afundar"><code class="docutils literal notranslate"><span class="pre">Terreno.afundar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ilha.Terreno.colocar_jogador"><code class="docutils literal notranslate"><span class="pre">Terreno.colocar_jogador()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ilha.Terreno.string_rep"><code class="docutils literal notranslate"><span class="pre">Terreno.string_rep()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jogador.html">Pagina Jogador</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jogador.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aventureiro.html">Pagina Aventureiro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aventureiro.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ilha Proibida Fogo</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Pagina Ilha</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ilha.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pagina-ilha">
+<h1>Pagina Ilha<a class="headerlink" href="#pagina-ilha" title="Link to this heading"></a></h1>
+<p><strong>Fogo Wiki</strong> A página ilha conta com a montagem completa do tabuleiro do Jogo Ilha Proibida Fogo.</p>
+<p id="module-ilha">Página Montagem do Tabulheiro (Ilha) do jogo Ilha Proibida Equipe Fogo.</p>
+<section id="changelog">
+<h2>Changelog<a class="headerlink" href="#changelog" title="Link to this heading"></a></h2>
+<div class="versionadded">
+<p><span class="versionmodified added">Novo na versão 5.12: </span>montagem do tabuleiro.</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">Novo na versão 23.11: </span>criação da ilha.py.</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified added">Novo na versão 21.12: </span>criação da Carta de Troca de Terrenos</p>
+</div>
+</section>
+<dl class="py class">
+<dt class="sig sig-object py" id="ilha.CartaAlagamento">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ilha.</span></span><span class="sig-name descname"><span class="pre">CartaAlagamento</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ilha.CartaAlagamento" title="Link to this definition"></a></dt>
+<dd><p>Base: <a class="reference internal" href="#ilha.CartaTesouro" title="ilha.CartaTesouro"><code class="xref py py-class docutils literal notranslate"><span class="pre">CartaTesouro</span></code></a></p>
+<p>Classe que representa uma carta de alagamento no jogo Ilha Proibida.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ilha.CartaTesouro">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ilha.</span></span><span class="sig-name descname"><span class="pre">CartaTesouro</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ilha.CartaTesouro" title="Link to this definition"></a></dt>
+<dd><p>Base: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Classe que representa uma carta de tesouro no jogo Ilha Proibida.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ilha.Carta_Troca_Terrenos">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ilha.</span></span><span class="sig-name descname"><span class="pre">Carta_Troca_Terrenos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ilha.Carta_Troca_Terrenos" title="Link to this definition"></a></dt>
+<dd><p>Base: <a class="reference internal" href="#ilha.CartaTesouro" title="ilha.CartaTesouro"><code class="xref py py-class docutils literal notranslate"><span class="pre">CartaTesouro</span></code></a></p>
+<p>Classe que representa uma carta que troca os terrenos</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ilha.Carta_troca_habilidades">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ilha.</span></span><span class="sig-name descname"><span class="pre">Carta_troca_habilidades</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">face</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ilha.Carta_troca_habilidades" title="Link to this definition"></a></dt>
+<dd><p>Base: <a class="reference internal" href="#ilha.CartaTesouro" title="ilha.CartaTesouro"><code class="xref py py-class docutils literal notranslate"><span class="pre">CartaTesouro</span></code></a></p>
+<p>Classe que representa uma carta de troca de habilidades</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ilha.IlhaProibida">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ilha.</span></span><span class="sig-name descname"><span class="pre">IlhaProibida</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jogadores</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ilha.IlhaProibida" title="Link to this definition"></a></dt>
+<dd><p>Base: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Representa o tabuleiro o jogo ‘Ilha Proibida’.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ilha.IlhaProibida.imprimir_tabuleiro_ilha">
+<span class="sig-name descname"><span class="pre">imprimir_tabuleiro_ilha</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ilha.IlhaProibida.imprimir_tabuleiro_ilha" title="Link to this definition"></a></dt>
+<dd><p>Imprime o tabuleiro da Ilha Proibida no console.</p>
+<p>O tabuleiro é exibido em forma de diamante, com terrenos representados por seus nomes,
+valores de face (tafv) e a presença de jogadores. Cada linha do tabuleiro é separada por
+linhas horizontais, e cada coluna é delimitada por barras verticais.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Retorna<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ilha.IlhaProibida.monta_tabuleiro_oceano">
+<span class="sig-name descname"><span class="pre">monta_tabuleiro_oceano</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jogadores</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ilha.IlhaProibida.monta_tabuleiro_oceano" title="Link to this definition"></a></dt>
+<dd><p>Monta o tabuleiro em forma de diamante.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>jogadores</strong> – Lista de jogadores.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ilha.IlhaProibida.trocar_terrenos">
+<span class="sig-name descname"><span class="pre">trocar_terrenos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">terreno1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">terreno2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ilha.IlhaProibida.trocar_terrenos" title="Link to this definition"></a></dt>
+<dd><p>Troca a posição de dois terrenos no tabuleiro.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>terreno1</strong> – Instância de um terreno.</p></li>
+<li><p><strong>terreno2</strong> – Instância de outro terreno.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ilha.Terreno">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ilha.</span></span><span class="sig-name descname"><span class="pre">Terreno</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nome</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tafv</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ilha.Terreno" title="Link to this definition"></a></dt>
+<dd><p>Base: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Classe que representa um terreno no tabuleiro do jogo Ilha Proibida.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ilha.Terreno.afundar">
+<span class="sig-name descname"><span class="pre">afundar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ilha.Terreno.afundar" title="Link to this definition"></a></dt>
+<dd><p>Afundar o terreno.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ilha.Terreno.colocar_jogador">
+<span class="sig-name descname"><span class="pre">colocar_jogador</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jogador</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ilha.Terreno.colocar_jogador" title="Link to this definition"></a></dt>
+<dd><p>Coloca um jogador no terreno.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parâmetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>jogador</strong> – Instância do jogador a ser colocado no terreno.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ilha.Terreno.string_rep">
+<span class="sig-name descname"><span class="pre">string_rep</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ilha.Terreno.string_rep" title="Link to this definition"></a></dt>
+<dd><p>Retorna uma representação em string do terreno.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Retorna<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String representando o terreno.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Índice</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Índice do Módulo</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Página de Busca</span></a></p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="index.html" class="btn btn-neutral float-left" title="Bem vindo(a) ao Fogo wiki!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="jogador.html" class="btn btn-neutral float-right" title="Pagina Jogador" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Direitos autorais 2023, Grupo Fogo.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
