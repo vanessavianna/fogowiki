@@ -5,24 +5,21 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
+import sphinx_rtd_theme
 import os
 import sys
-import sphinx_rtd_theme
-
 path = sys.path.insert(0, os.path.abspath(os.path.join("", "../..")))
 
 project = 'Ilha Proibida Fogo'
 copyright = '2023, Grupo Fogo'
 author = 'Grupo Fogo'
-release = '26.12.2023'
+release = '27.12.2023'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon',
     'sphinx_rtd_theme'
 ]
 
