@@ -13,7 +13,7 @@ path = sys.path.insert(0, os.path.abspath(os.path.join("", "../..")))
 project = 'Ilha Proibida Fogo'
 copyright = '2023, Grupo Fogo'
 author = 'Grupo Fogo'
-release = '26.12.2023'
+release = '27.12.2023'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
