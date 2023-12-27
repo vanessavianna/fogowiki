@@ -8,7 +8,7 @@
 
 import os
 import sys
-path = sys.path.insert(0, os.path.abspath(os.path.join("..", "..")))
+path = sys.path.insert(0, os.path.abspath(os.path.join("", "..")))
 
 project = 'Ilha Proibida Fogo'
 copyright = '2023, Grupo Fogo'
