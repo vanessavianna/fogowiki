@@ -9,7 +9,6 @@
 import os
 import sys
 path = sys.path.insert(0, os.path.abspath(os.path.join("..", "..")))
-print(path)
 
 project = 'Ilha Proibida Fogo'
 copyright = '2023, Grupo Fogo'
@@ -33,4 +32,4 @@ language = 'pt_BR'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_rtd_theme'
-html_static_path = []
+html_static_path = ['_static']
