@@ -20,7 +20,8 @@ release = '27.12.2023'
 
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon'
+    'sphinx.ext.napoleon',
+    'sphinx_rtd_theme'
 ]
 
 templates_path = ['_templates']
