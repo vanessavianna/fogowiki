@@ -17,6 +17,6 @@ python:
 
 dependencies:
   - type: python
-    version: 3.8
+    version: 3.11
     install:
       - requirements: docs/requirements.txt  # Caminho para o arquivo de requisitos
