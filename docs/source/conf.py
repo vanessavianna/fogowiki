@@ -8,6 +8,8 @@
 
 import os
 import sys
+import sphinx_rtd_theme
+
 path = sys.path.insert(0, os.path.abspath(os.path.join("", "../..")))
 
 project = 'Ilha Proibida Fogo'
@@ -20,7 +22,8 @@ release = '26.12.2023'
 
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.napoleon'
+    'sphinx.ext.napoleon',
+    'sphinx_rtd_theme'
 ]
 
 templates_path = ['_templates']
@@ -31,5 +34,5 @@ language = 'pt_BR'
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'sphinx_rtd_theme'
-html_static_path = ['_static']
+html_theme = "sphinx_rtd_theme"
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
